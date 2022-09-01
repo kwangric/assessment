@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GetUWired</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-image: url('https://i.imgur.com/ItcwjBb.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.25rem;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        background-color: rgb(119, 221, 119);
+        padding: 1rem;
+        color: white;
+        text-shadow: 1px 1px #000;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      li:hover {
+        background-color: rgb(69, 129, 69);
+      }
+      .nav-bar {
+        position: absolute;
+        width: 100vw;
+        height: 5rem;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+      }
+      #title {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      .links {
+        flex: 2 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        height: 100%;
+      }
+      .bottom-color {
+        position: absolute;
+        bottom: 0;
+        height: 0.5rem;
+        left: 0;
+        right: 0;
+        background-color: #77dd77;
+        opacity: 0;
+        z-index: -1;
+      }
+      .link {
+        display: inline;
+        background-color: rgb(119, 221, 119, 0);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 0.75rem 0.75rem 1.9rem 0.75rem;
+      }
+      .link:hover {
+        background-color: rgb(119, 221, 119, 1);
+      }
+      .link:hover .bottom-color {
+        opacity: 1;
+      }
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 5rem;
+        opacity: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .link:hover .dropdown {
+        opacity: 1;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <h1 id="title">GETUWIRED</h1>
+      <div class="links">
+        <div>
+          <div class="link-overlay link">
+            ABOUT
+            <div class="about-menu dropdown">
+              <ul>
+                <li><a>OUR STORY</a></li>
+                <li><a>OUR COMMITMENT TO YOU</a></li>
+              </ul>
+            </div>
+            <div class="bottom-color"></div>
+          </div>
+        </div>
+        <div>
+          <div href="/location" class="link-overlay link">
+            LOCATION
+            <div class="location-menu dropdown">
+              <ul>
+                <li><a>AUSTIN, TX</a></li>
+                <li><a>ATLANTA, GA</a></li>
+                <li><a>SEATTLE, WA</a></li>
+              </ul>
+            </div>
+            <div class="bottom-color"></div>
+          </div>
+        </div>
+        <div>
+          <div href="/products" class="link-overlay link">
+            PRODUCTS
+            <div class="products-menu dropdown">
+              <ul>
+                <li><a>NEW ARRIVALS</a></li>
+                <li><a>FEATURED</a></li>
+                <li><a>TOP RATED</a></li>
+                <li><a>HIS</a></li>
+                <li><a>HERS</a></li>
+                <li><a>KIDS</a></li>
+                <li><a>ACCESSORIES</a></li>
+                <li><a>SPRING CATALOG</a></li>
+                <li><a>THE ESSENTIALS</a></li>
+                <li><a>SALE</a></li>
+              </ul>
+            </div>
+            <div class="bottom-color"></div>
+          </div>
+        </div>
+        <div>
+          <div href="/blog" class="link-overlay link">
+            BLOG
+            <div class="bottom-color"></div>
+          </div>
+        </div>
+        <div>
+          <div href="/contact" class="link-overlay link">
+            CONTACT
+            <div class="bottom-color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
